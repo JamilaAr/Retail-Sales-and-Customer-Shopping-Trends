@@ -18,9 +18,9 @@ My Capstone Project
 
 ## Data Source
 
-#### Retail Sales and Customer Shopping Trends are taken from : [kaggle.com][( https://www.kaggle.com)].
-#### Reatail Sales Dataset is taken from : [kaggle.com][(https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data)]
-#### Customer Shopping Trends is taken from : [Kaggle.com][(https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset?select=shopping_trends_updated.csv)]
+#### Retail Sales and Customer Shopping Trends are taken from : [kaggle.com]( https://www.kaggle.com).
+#### Reatail Sales Dataset is taken from : [kaggle.com](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data)
+#### Customer Shopping Trends is taken from : [Kaggle.com](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset?select=shopping_trends_updated.csv)
 
 
 ## Data Processing and Data Transformation
@@ -63,7 +63,7 @@ My Capstone Project
 * and you will need to add the CSV files to your local machine.
 
 #### Steps to Run the Project:
-1. Clone the Repository to your local machine: The link is [here][Capstone Repository](https://github.com/JamilaAr/Retail-Sales-and-Superstore-Performance-Data-Analysis)
+1. Clone the Repository to your local machine: The link is [here](https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/tree/main)
 2. Create and activate a virtual environment, and install required packages from 'requirements.txt':
 
 - For Linux/Mac:
