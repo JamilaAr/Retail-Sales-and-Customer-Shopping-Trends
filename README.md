@@ -1,5 +1,5 @@
 
-![Retail Sales Overview](ReadmeImage/Retail Sales Image.jpg)
+![Retail_Sales_Overview](ReadmeImage\Retail_Sales_Image.jpg)
 
 # Retail-Sales-and-Customer-Shopping-Trends
 
@@ -11,11 +11,7 @@ My Capstone Project
 
 ## Overview
 
-- This project analyzes retail sales and customer shopping trends to identify key factors impacting sales and customer behavior. Using Pandas, the analysis explores sales data, seasonal trends, holiday promotions, and customer shopping patterns to understand periods and factors driving higher sales. It provides valuable insights into seasonal demand fluctuations and customer behavior.
-
-The SQL analysis further investigates the relationship between discounts and profitability, focusing on how various discount levels affect sales and profit across product categories. It identifies optimal discount strategies to maximize profit while maintaining sales performance, offering insights into the effectiveness of current sales approaches.
-
-Together, the Pandas and SQL analyses offer actionable insights for retailers to optimize promotional strategies, refine offerings, and adapt to seasonal demand shifts, aiming to enhance retail performance and increase revenue.
+#### This project analyzes retail sales and customer behavior trends to identify key factors influencing profitability and performance. Using Pandas and SQL, the analysis explores seasonal trends, customer demographics, and the impact of discounts on sales and profit across categories. The goal is to provide actionable insights for optimizing discount strategies, targeting high-demand periods, and tailoring offerings to maximize revenue and customer satisfaction.
 
 ## Questions Addressed
 
@@ -35,13 +31,13 @@ Together, the Pandas and SQL analyses offer actionable insights for retailers to
 
 ## Data Source
 
-- Retail Sales and Customer Shopping Trends are taken from : [kaggle.com]( https://www.kaggle.com).
-- Retail Sales Dataset is taken from : [kaggle.com](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data)
-- Customer Shopping Trends is taken from : [Kaggle.com](https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset?select=shopping_trends_updated.csv)
+- Retail Sales and Customer Shopping Trends were taken from : [kaggle.com]( https://www.kaggle.com).
+- Retail Sales Dataset was taken from : https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset/data
+- Customer Shopping Trends was taken from : https://www.kaggle.com/datasets/iamsouravbanerjee/customer-shopping-trends-dataset?select=shopping_trends_updated.csv
 
 ## Data Dictionary
 
-This project analyzes a merged dataset that combines the Retail Sales and Customer Shopping Trends datasets to provide comprehensive insights into sales performance, customer behavior, and purchasing patterns. Below is a detailed description of each column, including both original features and newly derived columns used in the analysis:
+This project analyzes a merged dataset combining Retail Sales and Customer Shopping Trends datasets to provide comprehensive insights into sales performance, customer behavior, and purchasing patterns. Below is a detailed description of each column used in the analysis:
 
 ### Columns in the Merged Dataset:
 
@@ -50,10 +46,10 @@ This project analyzes a merged dataset that combines the Retail Sales and Custom
 3. **Gender**: Gender of the customer (e.g., Male, Female).
 4. **Product**: The name of the product purchased by the customer.
 5. **Category**: The category of the product (e.g., Clothing, Footwear, Accessories, Outerwear).
-6. **Location**: Geographic location of the customer (e.g., City, State, Region).
+6. **Location**: Geographic location of the customer (e.g., State).
 7. **Season**: The season in which the purchase was made (e.g., Spring, Summer, Fall, Winter).
 8. **Review Rating**: The average rating given by customers to the product (on a scale from 1 to 5).
-9. **Subscription Status**: Indicates if the customer has a subscription status (e.g., Active, Inactive).
+9. **Subscription Status**: Indicates if the customer has a subscription status (True/False).
 10. **Discount Applied**: Indicates whether a discount was applied to the order (True/False).
 11. **Promo Code Used**: Indicates whether a promo code was used during the purchase (True/False).
 12. **Previous Purchases**: Number of purchases made by the customer prior to this one. They were categorized into groups (e.g., 0–10, 11–20, 50+).
@@ -61,11 +57,11 @@ This project analyzes a merged dataset that combines the Retail Sales and Custom
 14. **Date**: Date of purchase, with extracted components Year, Month, Day for time-based trend analysis.
 15. **Quantity**: The quantity of items purchased in the transaction.
 16. **Purchase Amount (USD)**: The discounted price for a single unit of the product.
-17. **Sales**: Total sales value of the transaction, calculated as the 'Purchase Amount (USD)' * 'Quantity'.
-18. **Holiday**: Indicates the specific holiday name (e.g., New Year's Day, Christmas) during which a transaction occurred, based on the purchase date in the year 2023..
-22. **Discount**: The percentage or value of the discount applied to the transaction. This column helps analyze how discounts impact customer purchasing behavior and overall sales performance.(SQL-derived)
-23. **Profit**: The monetary profit earned from a transaction. This column is crucial for understanding profitability trends across products, categories and season.(SQL-derived)
-24. **Original_Price_per_Item**: The original price of products before discount applied.
+17. **Sales**: The total sales value of a transaction, calculated as 'Purchase Amount (USD)' multiplied by 'Quantity'.
+18. **Holiday**: Indicates the specific holiday name (e.g., New Year's Day, Christmas) during which a transaction occurred, based on the purchase date in the year 2023.
+19. **Discount**: The percentage or value of the discount applied to the transaction.(derived from SQL analysis)
+20. **Profit**: The monetary profit earned from a transaction.(derived from SQL analysis)
+21. **Original_Price_per_Item**: The price of the product before any discounts were applied.
 
 
 ## Data Processing and Data Transformation
@@ -104,10 +100,10 @@ This project analyzes a merged dataset that combines the Retail Sales and Custom
 
 ## Best practices and how to Replicate and run the project:
 
-This project contains two Jupyter notebooks located in the folder[notebooks](notebooks). While they are separate files, they complement each other, and it is recommended to run them in the following order for a seamless analysis:
+This project contains two Jupyter notebooks located in the folder [notebooks](notebooks). While they are separate files, they complement each other, and it is recommended to run them in the following order for a seamless analysis:
 
-1. [Retail Sales and Customer Shopping Trends](Retail_Sales_and_Customer_Shopping_Trends.ipynb)
-2. [Retail Sales and Trends SQL Analysis](Retail_Sales_and_Trends_SQL_Analysis.ipynb)
+1. [Retail_Sales_and_Customer_Shopping_Trends](Retail_Sales_and_Customer_Shopping_Trends.ipynb)
+2. [Retail_Sales_and_Trends_SQL_Analysis](Retail_Sales_and_Trends_SQL_Analysis.ipynb)
 
 Additional Resources in the Repository
 
@@ -144,34 +140,33 @@ The .db file, which was created by converting the merged DataFrame from Pandas t
 
 1. Clone the Repository:
 * Clone the project repository to your local machine by using the following URL: https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/tree/main
-* Run the command below in your terminal:
-git clone https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/tree/main
+* Run the following command in your terminal: git clone https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/tree/main
 
 2. Create and Activate a Virtual Environment:
 * Set up a virtual environment and install the required packages from requirements.txt:
 
 - For Linux/Mac:
   
-* python3 -m venv venv
-* source venv/bin/activate
-* pip install -r requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
   
 - For Git Bash(Windows):
   
-* python -m venv venv
-* source venv/Scripts/activate
-* pip install -r requirements.txt
+python -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
 
 3. Deactivate the Virtual Environment (After Use):
   
-* deactivate
+deactivate
       
 4. Ensure that all the necessary CSV data files are placed in the main project directory. These files are essential for the notebooks to function properly.
 
 5. Run the Notebooks:
-* Open and execute the following notebooks for analysis:
+Open and execute the following notebooks for analysis:
 
-1. Retail-Sales_and_Customer_Shopping_Trends.ipynb
+1. Retail_Sales_and_Customer_Shopping_Trends.ipynb
 2. Retail_Sales_and_Trends_SQL_Analysis.ipynb
 
 ## Features
@@ -187,7 +182,7 @@ git clone https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/
 
 * Filtered specific rows and columns and calculated new values as needed.
 
-* Used functions like .head(), .info(), .describe(), .isna(), .sum(), .fillna(), .sort_values(), and .mean() to explore and analyze the data.
+* Used functions like .head(), .info(), .describe(), .isna(), .sum(), .sort_values(), and .mean() to explore and analyze the data.
 
 3. Data Visualization and Presentation:
 
@@ -195,7 +190,7 @@ git clone https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/
 
 4. Best Practices:
 
-* Provided detailed, step-by-step instructions for setting up and running the project, including Prerequisites and using a virtual environment...
+* Provided detailed, step-by-step instructions for replicating and running the project, including prerequisites, cloning the repository, and setting up the virtual environment.
 
 5. Data Interpretation:
 
@@ -225,16 +220,16 @@ git clone https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/
 
 ## Conclusion:
 
-The Retail Sales and Customer Shopping Trends project provided valuable insights into sales performance. The analysis highlighted strong sales across product categories, locations, and customer segments, underscoring the effectiveness of current strategies. Seasonal trends and holidays significantly boosted sales, with festive periods driving higher demand and engagement.
+The Retail Sales and Customer Shopping Trends project provided valuable insights into sales performance, highlighting strong sales across product categories, locations, and customer demographics. The analysis emphasized the effectiveness of current strategies, with seasonal trends and holidays playing a significant role in boosting sales. Festive periods, in particular, drove higher demand and engagement, showcasing the importance of targeting these peak times for maximizing profitability.
 
-We observed a moderate positive correlation (0.54) between profit and discount, indicating that higher discounts tend to increase profit, though other factors also influence profitability. While discounts can drive sales, it’s important to balance them to avoid diminishing profit margins. Effective discount strategies should focus on maximizing both sales and profitability.
+We observed a moderate positive correlation (0.54) between profit and discount, indicating that higher discounts tend to increase profit, though other factors also influence profitability. While discounts can drive sales, it's important to balance them to avoid reducing profit margins. Effective discount strategies should focus on maximizing both sales and profitability.
 
-In summary, a strategic approach combining effective sales tactics with balanced discounting can drive growth and sustain profitability in the competitive retail market.
+In summary, adopting a strategic approach that combines effective sales tactics with well-balanced discounting can drive growth and sustain profitability in the highly competitive retail market.
 
 ## Acknowledgements:
 
 #### This project was created as a capstone for the Data Analytics pathway through the Code:You program. I would like to express my deepest gratitude to my mentors for their invaluable guidance and support throughout this journey.
 
-#### To my husband, thank you for your unwavering support and patience. My heartfelt appreciation goes to my baby, who has grown so fast during this time. Your patience inspired me to keep going, even when balancing my studies and time with you was challenging. I’m sorry for the moments I may not have been fully present.
+#### To my husband, thank you for your unwavering support and patience. I also want to express my deepest appreciation to my baby girl, who has grown so much during this time. Your patience has inspired me to keep going, even when balancing my studies with caring for you was challenging. I’m sorry for the moments I may not have been fully present.
 
 #### I also want to acknowledge the role of AI (ChatGPT and Perplexity) as a valuable mentor in this project. It guided me through coding challenges, debugging issues, and organizing my ideas effectively. I am grateful to several online platforms like Google, Pluralsight, Codecademy, W3Schools, FreeCodeCamp, and others, which provided additional resources and insights.
