@@ -1,5 +1,5 @@
 
-![Retail_Sales_Overview](ReadmeImage\Retail_Sales_Image.jpg)
+![Retail_Sales_Overview](ReadmeImage/Retail_Sales_Image.jpg)
 
 # Retail-Sales-and-Customer-Shopping-Trends
 
