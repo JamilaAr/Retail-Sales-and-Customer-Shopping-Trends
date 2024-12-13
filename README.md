@@ -147,19 +147,22 @@ The .db file, which was created by converting the merged DataFrame from Pandas t
 
 - For Linux/Mac:
   
-* python3 -m venv venv
-* source venv/bin/activate
-* pip install -r requirements.txt
+* `python3 -m venv venv`
+* `source venv/bin/activate`
+* `pip install -r requirements.txt`
   
 - For Git Bash(Windows):
   
-* python -m venv venv
-* source venv/Scripts/activate
-* pip install -r requirements.txt
+* `python -m venv venv`
+* `source venv/Scripts/activate`
+* `pip install -r requirements.txt`
+
+* As a Windows user, you will need to install an extra package for the project to work properly. To install the required package, run:
+* `pip install pywin32`
 
 3. Deactivate the Virtual Environment (After Use):
   
-deactivate
+`deactivate`
       
 4. Ensure that all the necessary CSV data files are placed in the main project directory. These files are essential for the notebooks to function properly.
 
