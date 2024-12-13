@@ -7,7 +7,7 @@ My Capstone Project
 
 ## What is the reason behind choosing this project, Retail Sales and Customer Shopping Trends?
 
-#### I chose this project to gain practical experience in analyzing real-world sales data while deepening my understanding of customer behavior, product performance, and market trends. As someone passionate about the sales field and e-commerce, I wanted to explore how businesses can optimize sales strategies, understand customer buying patterns, and drive growth in the online marketplace. This project not only allows me to apply data analysis techniques to solve business problems but also strengthens my skills in data manipulation and visualization, which are essential for a successful career in data analysis.
+#### I chose this project to gain practical experience in analyzing real-world sales data while deepening my understanding of customer behavior, product performance, and market trends. As someone passionate about the sales field and e-commerce, I wanted to explore how businesses can optimize sales strategies, understand customer buying patterns, and drive growth. This project not only allows me to apply data analysis techniques to solve business problems but also strengthens my skills in data manipulation and visualization, which are essential for a successful career in data analysis.
 
 ## Overview
 
@@ -39,7 +39,7 @@ My Capstone Project
 
 This project analyzes a merged dataset combining Retail Sales and Customer Shopping Trends datasets to provide comprehensive insights into sales performance, customer behavior, and purchasing patterns. Below is a detailed description of each column used in the analysis:
 
-### Columns in the Merged Dataset:
+### Columns in the Merged Dataset
 
 1. **Customer ID**: Unique identifier for each customer.
 2. **Age**:Customer age for demographic insights, categorized into Age Groups (e.g., Child, Adult, Senior).
@@ -98,7 +98,7 @@ This project analyzes a merged dataset combining Retail Sales and Customer Shopp
 - Aggregating customer demographics to analyze the contribution of different age groups and genders to overall sales.
 - Using SQL aggregation functions to calculate total sales, profit, and discounts by category, season, and other factors provides a deeper understanding of profitability trends.
 
-## Best practices and how to Replicate and run the project:
+## Best practices and how to Replicate and run the project
 
 This project contains two Jupyter notebooks located in the folder [notebooks](notebooks). While they are separate files, they complement each other, and it is recommended to run them in the following order for a seamless analysis:
 
@@ -136,7 +136,7 @@ After installing VSC and the Jupyter extension, you need to install Jupyter Note
 5. SQL Database (.db file):
 The .db file, which was created by converting the merged DataFrame from Pandas to SQL, is required for running the SQL analysis. You can either download this file from the repository or you can create it by running the SQL_Analysis.ipynb notebook to convert the merged Pandas DataFrame into an SQL database.
 
-### Getting started to Replicate and Run the Project:
+### Getting started to Replicate and Run the Project
 
 1. Clone the Repository:
 * Clone the project repository to your local machine by using the following URL: https://github.com/JamilaAr/Retail-Sales-and-Customer-Shopping-Trends/tree/main
@@ -147,15 +147,15 @@ The .db file, which was created by converting the merged DataFrame from Pandas t
 
 - For Linux/Mac:
   
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+* python3 -m venv venv
+* source venv/bin/activate
+* pip install -r requirements.txt
   
 - For Git Bash(Windows):
   
-python -m venv venv
-source venv/Scripts/activate
-pip install -r requirements.txt
+* python -m venv venv
+* source venv/Scripts/activate
+* pip install -r requirements.txt
 
 3. Deactivate the Virtual Environment (After Use):
   
@@ -166,8 +166,8 @@ deactivate
 5. Run the Notebooks:
 Open and execute the following notebooks for analysis:
 
-1. Retail_Sales_and_Customer_Shopping_Trends.ipynb
-2. Retail_Sales_and_Trends_SQL_Analysis.ipynb
+* Retail_Sales_and_Customer_Shopping_Trends.ipynb
+* Retail_Sales_and_Trends_SQL_Analysis.ipynb
 
 ## Features
 
@@ -204,7 +204,7 @@ Open and execute the following notebooks for analysis:
 
 * Adding new metrics such as original price per item, profit and discount to analyze their correlation and the impact of discount on profitability...
 
-## Interpretation of the data:
+## Interpretation of the data
 
 - In this analysis, we observed a clear seasonal trend in retail sales, with sales peaking during the holiday season and dropping during the summer months. Additionally, a moderate positive correlation (0.54) was found between the discount rate and profit, indicating that higher discounts tend to increase profit, although other factors also contribute to profitability. This highlights the need for businesses to strategically manage discount levels to optimize profitability, especially during peak sales periods, while considering other factors like demand and seasonality.
 
@@ -218,7 +218,7 @@ Open and execute the following notebooks for analysis:
 
 [Click on the link](https://public.tableau.com/views/RetailSalesandCustomerShoppingTrends/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Conclusion:
+## Conclusion
 
 The Retail Sales and Customer Shopping Trends project provided valuable insights into sales performance, highlighting strong sales across product categories, locations, and customer demographics. The analysis emphasized the effectiveness of current strategies, with seasonal trends and holidays playing a significant role in boosting sales. Festive periods, in particular, drove higher demand and engagement, showcasing the importance of targeting these peak times for maximizing profitability.
 
@@ -226,7 +226,7 @@ We observed a moderate positive correlation (0.54) between profit and discount, 
 
 In summary, adopting a strategic approach that combines effective sales tactics with well-balanced discounting can drive growth and sustain profitability in the highly competitive retail market.
 
-## Acknowledgements:
+## Acknowledgements
 
 #### This project was created as a capstone for the Data Analytics pathway through the Code:You program. I would like to express my deepest gratitude to my mentors for their invaluable guidance and support throughout this journey.
 
